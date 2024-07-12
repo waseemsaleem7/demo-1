@@ -1,0 +1,410 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Hello, world!</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 80px;
+      }
+      .navbar .collapse {
+        margin-left: 300px;
+      }
+      .navbar > .container,
+      .navbar > .container-fluid,
+      .navbar > .container-lg,
+      .navbar > .container-md,
+      .navbar > .container-sm,
+      .navbar > .container-xl,
+      .navbar > .container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .man {
+        padding-left: 50px;
+        margin-left: 50px;
+      }
+      .container,
+      .container-fluid,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+      }
+
+      .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+      }
+
+      .section-2 {
+        background-color: rgb(194, 120, 10);
+        position: relative;
+        z-index: -1;
+      }
+      .section-2 .h1 {
+        text-align: center;
+        font-size: 45px;
+      }
+      .f1 {
+        padding-top: 100px;
+      }
+      .h1,
+      h1 {
+        font-size: calc(1.375rem + 1.5vw);
+      }
+      .section-2 .h1 {
+        text-align: center;
+        font-size: 45px;
+      }
+      .f1 {
+        padding-top: 100px;
+      }
+      .h1,
+      h1 {
+        font-size: calc(1.375rem + 1.5vw);
+      }
+      .p {
+        text-align: center;
+        padding-bottom: 200px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -140px;
+      }
+      .justify-content-between {
+        justify-content: space-between !important;
+      }
+      .one {
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+      .three {
+        margin-top: 200px;
+        text-align: center;
+      }
+      .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: rgba(
+          var(--bs-light-rgb),
+          var(--bs-bg-opacity)
+        ) !important;
+      }
+      .border {
+        border: 1px solid #dee2e6 !important;
+      }
+      .row > * {
+        flex-shrink: 0;
+        width: 420px;
+        height: 250px;
+      }
+      .one i {
+        border: 1px solid lightgray;
+        font-size: 40px;
+        padding: 20px;
+        border-radius: 100%;
+        margin-top: 10px;
+      }
+      .fa,
+      .fas {
+        font-weight: 900;
+      }
+      .fa,
+      .far,
+      .fas {
+        font-family: "Font Awesome 5 Free";
+      }
+      .one h5 {
+        padding-top: 10px;
+      }
+      .h5,
+      h5 {
+        font-size: 1.25rem;
+      }
+      .one h6 {
+        border-bottom: 1px solid rgb(110, 175, 24);
+        padding-bottom: 10px;
+      }
+      .h6,
+      h6 {
+        font-size: 1rem;
+      }
+      .mx-auto {
+        margin-right: auto !important;
+        margin-left: auto !important;
+      }
+
+      .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      .one {
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+
+      .one i {
+        border: 1px solid rgb(143, 32, 32);
+        font-size: 40px;
+        padding: 20px;
+        border-radius: 100%;
+        margin-top: 10px;
+      }
+
+      .one h5 {
+        padding-top: 10px;
+      }
+      .one i {
+        border: 1px solid lightgray;
+        font-size: 40px;
+        padding: 20px;
+        border-radius: 100%;
+        margin-top: 10px;
+      }
+
+      .fa,
+      .fas {
+        font-weight: 900;
+      }
+      .one h6 {
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+      }
+      .h6,
+      h6 {
+        font-size: 1rem;
+      }
+      .one h4 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .h4,
+      h4 {
+        font-size: calc(1.275rem + 0.3vw);
+      }
+
+      .one {
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+      .one h6 {
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .nav {
+        margin-left: 400px;
+      }
+      b {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav start -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid man">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav part-2">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <a class="nav-link text-black" href="#">Pricing</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Resources</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">freefire</a></li>
+                <li><a class="dropdown-item" href="#">Anot</a></li>
+                <li><a class="dropdown-item" href="#">Something</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">who</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Company</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <a class="nav-link text-black" href="#"> partners </a>
+          </div>
+          <nav class="nav nav-pills nav-fill">
+            <a class="nav-link text-black" href="#">Login </a>
+            <a
+              class="nav-link active nav-end bg-warning"
+              aria-current="page"
+              href="#"
+              >Get Started</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- sec-2 start -->
+
+    <div class="section-2">
+      <h1 class="h1 f1">WE ARE Y0U TO GET SOME QUESTION</h1>
+      <p class="h1">CONTACT AT TIME <b>ANY TIME</b></p>
+      <p class="p">HAVE ANY QUESTION TO DISCUSS A ANSWER LOREM I SGHORT POEM</p>
+    </div>
+
+    <!-- sec-2 end -->
+
+    <!-- boxes start -->
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-sm-12 bg-danger border one">
+          <i class="icon-1 fas fa-comment-dots bg-danger"></i>
+          <h5>Chatnow</h5>
+          <h6>Right from this website</h6>
+          <div class="d-grid gap-2 col-12 mx-auto">
+            <button class="btn add bg-warning" type="button">Add Chart</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 bg-primary border one">
+          <i class="icon-2 fas fa-envelope bg-warning"></i>
+          <h5>Email Us</h5>
+          <h6>From your email app</h6>
+          <h4>Support@doormat</h4>
+        </div>
+        <div class="col-md-3 col-sm-12 bg-secondary border one">
+          <i class="icon-3 fas fa-phone-alt bg-success"></i>
+          <h5>Call or text us</h5>
+          <h6>From your phone</h6>
+          <h4>+(647) 492-9515</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- boxes end -->
+
+    <!-- section end -->
+    <!--  -->
+    <div class="row">
+      <div class="col three">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam
+          assumenda ipsum aperiam
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <i class="fas fa-comment-dots"></i> -->
+  </body>
+</html>
